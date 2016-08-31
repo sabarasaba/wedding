@@ -15,10 +15,12 @@ export default Ember.Controller.extend({
     },
 
     onChange(what) {
+      //when this changes populate in guests property
       console.log(what);
     },
 
     sendRSVP() {
+      console.log(this.get('guests'));
       //const guest = this.store.createRecord('guest', {
         //name: 'Ignacio Rivas',
         //email: 'ignacio@rivas.com',
