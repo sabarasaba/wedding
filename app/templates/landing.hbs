@@ -54,31 +54,21 @@
     </h3>
 
     <form class="form">
-      <div class="row">
-        <div class="six columns">
-          <label for="exampleEmailInput">Your name</label>
-          <input class="u-full-width" type="text" placeholder="chocho loco" id="exampleEmailInput">
-        </div>
-        <div class="six columns">
-          <label for="exampleEmailInput">Your email</label>
-          <input class="u-full-width" type="email" placeholder="chochito@caliente.sexy" id="exampleEmailInput">
-        </div>
+      {{add-guest main=true}}
+      <div id="guest-list">
+        {{#each guests key="@index" as |guest|}}
+          {{add-guest main=false}}
+        {{/each}}
+
       </div>
 
-      <label for="exampleRecipientInput">Food preferences</label>
-      <select class="u-full-width" id="exampleRecipientInput">
-        <option value="Option 1">chorizito</option>
-        <option value="Option 2">milanesita</option>
-        <option value="Option 3">empanadita</option>
-      </select>
+      <div class="twelve columns guest__add" {{action 'addGuest'}}>
+        Add a guest
+      </div>
 
       <label for="exampleMessage">Anything you wanna tell us ?</label>
       <textarea class="u-full-width" placeholder="I love you guyz!" id="exampleMessage"></textarea>
 
-      <label class="example-send-yourself-copy">
-        <input type="checkbox">
-        <span class="label-body">Are you bringing a +1 ?</span>
-      </label>
       <input class="button-primary rsvp" type="submit" value="RSVP" {{action 'sendRSVP'}}>
     </form>
 

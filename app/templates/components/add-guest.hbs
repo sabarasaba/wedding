@@ -1,0 +1,43 @@
+{{#if main}}
+  <div class="row">
+    <div class="six columns">
+      <label>Your name</label>
+      <input class="u-full-width" type="text" placeholder="name">
+    </div>
+
+    <div class="six columns">
+      <label>Your email</label>
+      <input class="u-full-width" type="email" placeholder="chochito@caliente.io">
+    </div>
+  </div>
+
+  <label>Food preference</label>
+  <select class="u-full-width">
+    <option value="" disabled selected>Select your option</option>
+    <option value="Option 1">chorizito</option>
+    <option value="Option 2">milanesita</option>
+    <option value="Option 3">empanadita</option>
+  </select>
+{{else}}
+  <div class="row guest__box">
+    <div class="six columns">
+      <label>Guest name</label>
+      <input class="u-full-width" type="text" placeholder="name">
+    </div>
+
+    <div class="six columns">
+      <label>Food preference</label>
+      <select class="u-full-width">
+        <option value="" disabled selected>Select an option</option>
+        <option value="Option 1">chorizito</option>
+        <option value="Option 2">milanesita</option>
+        <option value="Option 3">empanadita</option>
+      </select>
+    </div>
+    <div class="guest__remove" {{action "remove"}}>
+      {{fa-icon 'times'}}
+    </div>
+  </div>
+
+{{/if}}
+
