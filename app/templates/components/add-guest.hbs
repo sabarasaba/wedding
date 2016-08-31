@@ -27,12 +27,17 @@
 
     <div class="six columns">
       <label>Food preference</label>
-      <select class="u-full-width">
-        <option value="" disabled selected>Select an option</option>
-        <option value="Option 1">chorizito</option>
-        <option value="Option 2">milanesita</option>
-        <option value="Option 3">empanadita</option>
-      </select>
+      {{#power-select
+            searchEnabled=false
+            selected=chosenFood
+            class="u-full-width"
+            placeholder="Select an option"
+            options=food
+            onchange=(action "onFoodChanged")
+            as |name|
+          }}
+        {{name}}
+      {{/power-select}}
     </div>
     <div class="guest__remove" {{action "remove"}}>
       {{fa-icon 'times'}}

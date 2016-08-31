@@ -1,5 +1,4 @@
 import Ember from 'ember';
-import AddGuest from '../components/add-guest';
 
 export default Ember.Controller.extend({
   guests: [],
