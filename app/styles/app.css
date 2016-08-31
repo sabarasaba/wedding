@@ -58,11 +58,17 @@
   position: relative;
 }
 
+.contact.u-full-width {
+  min-height: 150px;
+}
+
 .guest__remove {
   position: absolute;
   top: -12px;
   right: -10px;
   padding: 1rem;
+  cursor: pointer;
+  user-select: none;
 }
 
 .guest__add {
@@ -71,6 +77,8 @@
   margin-bottom: 2rem;
   text-align: center;
   color: #ada8a8;
+  cursor: pointer;
+  user-select: none;
 }
 
 

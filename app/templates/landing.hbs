@@ -55,9 +55,10 @@
 
     <form class="form">
       {{add-guest main=true}}
+
       <div id="guest-list">
         {{#each guests key="@index" as |guest|}}
-          {{add-guest main=false}}
+          {{add-guest main=false guest=guest onChange='onChange'}}
         {{/each}}
 
       </div>
@@ -67,7 +68,7 @@
       </div>
 
       <label for="exampleMessage">Anything you wanna tell us ?</label>
-      <textarea class="u-full-width" placeholder="I love you guyz!" id="exampleMessage"></textarea>
+      <textarea class="contact u-full-width" placeholder="Things you cant eat, things you wanna eat, drinks, music or just to tell us we're awesome. We know we are, but its nice to hear it from others." id="exampleMessage"></textarea>
 
       <input class="button-primary rsvp" type="submit" value="RSVP" {{action 'sendRSVP'}}>
     </form>
