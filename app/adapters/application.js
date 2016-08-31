@@ -1,9 +1,4 @@
-import DS from 'ember-data';
+import FirebaseAdapter from 'emberfire/adapters/firebase';
 
-export default DS.RESTAdapter.extend({
-  host: 'http://localhost:3000',
-  namespace: 'api',
-  primaryKey: '_id',
-
-  serializeId: id => id.toString()
+export default FirebaseAdapter.extend({
 });

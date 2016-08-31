@@ -6,7 +6,8 @@ export default Ember.Controller.extend({
       const guest = this.store.createRecord('guest', {
         name: 'Ignacio Rivas',
         email: 'ignacio@rivas.com',
-        food: 'carne, puto'
+        food: 'carne, puto',
+        createdAt: Date.now()
       });
 
       guest.save().then(() => {
