@@ -54,6 +54,10 @@
   width: 100%;
 }
 
+.guest__note {
+  text-align: left;
+}
+
 .guest__box {
   position: relative;
   margin-top: 2rem;
