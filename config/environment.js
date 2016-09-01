@@ -14,10 +14,10 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: "AIzaSyCfGd1_Sduj7b7D-cR5htm6-ppJhvQOJWM",
-      authDomain: "wedding-91e93.firebaseapp.com",
-      databaseURL: "https://wedding-91e93.firebaseio.com",
-      storageBucket: "wedding-91e93.appspot.com"
+      apiKey: process.env.FIREBASE_API_KEY,
+      authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+      databaseURL: process.env.FIREBASE_DATABASE_URL,
+      storageBucket: process.env.FIREBASE_STORAGE_BUCKET
     },
 
     APP: {
