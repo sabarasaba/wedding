@@ -13,6 +13,9 @@ App = Ember.Application.extend({
   Resolver
 });
 
+console.log('%c You sneaky bastard!', 'background: green; color: white; display: block; font-size: 20px');
+console.log('In case you\'re curious, its written with Ember+Firebase. You can have a look at the sources here https://github.com/sabarasaba/wedding');
+
 loadInitializers(App, config.modulePrefix);
 
 export default App;
