@@ -54,11 +54,11 @@
     </h3>
 
     <form class="form">
-      {{add-guest main=true}}
+      {{one-invitee onInviteeChange='onInviteeChange' invitee=invitee}}
 
       <div id="guest-list">
         {{#each guests key="@index" as |guest|}}
-          {{add-guest main=false guest=guest onChange='onChange'}}
+          {{add-guest guest=guest onChange='onChange' removeGuest='removeGuest'}}
         {{/each}}
 
       </div>

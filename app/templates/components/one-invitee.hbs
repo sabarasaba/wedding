@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="six columns">
+    <label>Your name</label>
+    {{input value=invitee.name class="u-full-width" placeholder="Name"}}
+  </div>
+
+  <div class="six columns">
+    <label>Your email</label>
+    {{input value=invitee.email class="u-full-width" placeholder="chochito@caliente.io"}}
+  </div>
+</div>
+
+<label>Food preference</label>
+{{#power-select
+    searchEnabled=false
+    selected=chosenFood
+    class="u-full-width"
+    placeholder="Select your option"
+    options=food
+    onchange=(action "onFoodChanged")
+    as |name|
+  }}
+  {{name}}
+{{/power-select}}
+

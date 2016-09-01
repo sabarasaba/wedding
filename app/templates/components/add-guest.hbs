@@ -1,48 +1,24 @@
-{{#if main}}
-  <div class="row">
-    <div class="six columns">
-      <label>Your name</label>
-      <input class="u-full-width" type="text" placeholder="Name">
-    </div>
-
-    <div class="six columns">
-      <label>Your email</label>
-      <input class="u-full-width" type="email" placeholder="chochito@caliente.io">
-    </div>
+<div class="row guest__box">
+  <div class="six columns">
+    <label>Guest name</label>
+    {{input value=guest.name class="u-full-width" placeholder="Name"}}
   </div>
 
-  <label>Food preference</label>
-  <select class="u-full-width">
-    <option value="" disabled selected>Select your option</option>
-    <option value="Option 1">chorizito</option>
-    <option value="Option 2">milanesita</option>
-    <option value="Option 3">empanadita</option>
-  </select>
-{{else}}
-  <div class="row guest__box">
-    <div class="six columns">
-      <label>Guest name</label>
-      {{input value=guest.name class="u-full-width" placeholder="Name papi" focus-out="onFocusOut"}}
-    </div>
-
-    <div class="six columns">
-      <label>Food preference</label>
-      {{#power-select
-            searchEnabled=false
-            selected=chosenFood
-            class="u-full-width"
-            placeholder="Select an option"
-            options=food
-            onchange=(action "onFoodChanged")
-            as |name|
-          }}
-        {{name}}
-      {{/power-select}}
-    </div>
-    <div class="guest__remove" {{action "remove"}}>
-      {{fa-icon 'times'}}
-    </div>
+  <div class="six columns">
+    <label>Food preference</label>
+    {{#power-select
+          searchEnabled=false
+          selected=chosenFood
+          class="u-full-width"
+          placeholder="Select an option"
+          options=food
+          onchange=(action "onFoodChanged")
+          as |name|
+        }}
+      {{name}}
+    {{/power-select}}
   </div>
-
-{{/if}}
-
+  <div class="guest__remove" {{action "remove"}}>
+    {{fa-icon 'times'}}
+  </div>
+</div>

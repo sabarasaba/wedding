@@ -5,23 +5,13 @@ export default Ember.Component.extend({
   chosedFood: null,
 
   actions: {
-
     onFoodChanged(value) {
-      const id = this.get('guest').id;
       this.set('chosenFood', value);
 
-      this.sendAction('onChange', {
+      this.sendAction('onInviteeChange', {
         attr: 'food',
-        value,
-        id
+        value
       });
-    },
-
-    remove() {
-      const id = this.get('guest').id;
-      this.sendAction('removeGuest', id);
-
-      this.remove();
     }
   }
 });
