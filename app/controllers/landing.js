@@ -23,10 +23,9 @@ export default Ember.Controller.extend({
     onInviteeChange(what) {
       const invitee = this.get('invitee');
 
-      this.set('invitee', {
-        ...invitee,
+      this.set('invitee', Object.assign({}, invitee, {
         food: what.value
-      });
+      }));
     },
 
     removeGuest(id) {
@@ -37,7 +36,6 @@ export default Ember.Controller.extend({
     },
 
     onChange(what) {
-      const invitee = this.get('invitee');
       const guests = this.get('guests');
 
       if (what.attr === 'food') {
