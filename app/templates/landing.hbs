@@ -69,7 +69,7 @@
       </div>
 
       <label for="exampleMessage">Anything you wanna tell us ?</label>
-      <textarea class="contact u-full-width" placeholder="Things you cant eat, things you wanna eat, drinks, music or just to tell us we're awesome. We know we are, but its nice to hear it from others." id="exampleMessage"></textarea>
+      {{textarea value=invitee.notes class="contact u-full-width" placeholder="Things you cant eat, things you wanna eat, drinks, music or just to tell us we're awesome. We know we are, but its nice to hear it from others." id="exampleMessage" }}
 
       <input class="button-primary rsvp" type="submit" value="RSVP" {{action 'sendRSVP'}}>
     </form>

@@ -6,7 +6,7 @@
 
   <div class="six columns">
     <label>Your email</label>
-    {{input value=invitee.email class="u-full-width" placeholder="chochito@caliente.io"}}
+    {{input value=invitee.email class="u-full-width" placeholder="chochito@caliente.io" pattern='[^@\s]+@[^@\s]+' type='email' title='Please use a valid email address' required='true' }}
   </div>
 </div>
 

@@ -6,7 +6,8 @@ export default Ember.Controller.extend({
   invitee: {
     name: '',
     email: '',
-    food: ''
+    food: '',
+    notes: ''
   },
 
   actions: {
@@ -44,24 +45,30 @@ export default Ember.Controller.extend({
       }
     },
 
+
     sendRSVP() {
-      console.log('INVITEE==>');
-      console.log(this.get('invitee'));
-      console.log('GUESTS==>');
-      console.log(this.get('guests'));
+      const invitee = this.get('invitee');
+      const invitations = [];
 
-      //const guest = this.store.createRecord('guest', {
-        //name: 'Ignacio Rivas',
-        //email: 'ignacio@rivas.com',
-        //food: 'carne, puto',
-        //createdAt: Date.now()
-      //});
+      const createInvitation = data => this.store.createRecord('guest', data);
 
-      //guest.save().then(() => {
-        //console.log('saved!');
-      //}).catch(() => {
-        //console.log('something went wrong..');
-      //});
+      invitations.push(createInvitation(invitee).save());
+
+      const guests = this.get('guests').map((e) => {
+        const el = Object.assign({}, e);
+        el.invited_by = invitations[0].name;
+
+        return createInvitation(el).save();
+      });
+
+
+      Ember.RSVP.all(invitations.concat(guests))
+        .then(() => {
+          console.log('All good');
+        })
+        .catch(() => {
+          console.log('bummer');
+        });
     }
   }
 });
