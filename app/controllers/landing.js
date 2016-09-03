@@ -48,7 +48,6 @@ export default Ember.Controller.extend({
 
 
     sendRSVP() {
-      this.transitionToRoute('thank-you');
       return;
 
       const invitee = this.get('invitee');
@@ -67,10 +66,10 @@ export default Ember.Controller.extend({
 
       Ember.RSVP.all(invitations.concat(guests))
         .then(() => {
-          console.log('All good');
+          this.transitionToRoute('thank-you');
         })
         .catch(() => {
-          console.log('bummer');
+          this.transitionToRoute('error');
         });
     }
   }
