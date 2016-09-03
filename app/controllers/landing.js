@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import _ from 'lodash/lodash';
 
 export default Ember.Controller.extend({
   guests: [],
@@ -50,15 +51,18 @@ export default Ember.Controller.extend({
       const invitee = this.get('invitee');
       const invitations = [];
 
-      const createInvitation = data => this.store.createRecord('guest', data);
+      const createInvitation = (data) => {
+        console.log(data);
+        return this.store.createRecord('guest', data);
+      }
 
       invitations.push(createInvitation(invitee).save());
 
       const guests = this.get('guests').map((e) => {
         const el = Object.assign({}, e);
-        el.invited_by = invitations[0].name;
+        el.invited_by = invitee.name;
 
-        return createInvitation(el).save();
+        return createInvitation(_.omit(el, ['id'])).save();
       });
 
 
