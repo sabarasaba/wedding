@@ -71,12 +71,12 @@
       <label for="exampleMessage">Anything you wanna tell us ?</label>
       {{textarea value=invitee.notes class="contact u-full-width" placeholder="Things you cant eat, things you wanna eat, drinks, music or just to tell us we're awesome. We know we are, but its nice to hear it from others." id="exampleMessage" }}
 
+      <div class="twelve columns guest__note">
+        <b>NOTE:</b> If you already RSVP'd but you wanna ammend your changes, just shoot us an email at <a href="mailto:hola@ignacioandvaiva.com">hola@ignacioandvaiva.com</a>.
+      </div>
+
       <input class="button-primary rsvp" type="submit" value="RSVP" {{action 'sendRSVP'}}>
     </form>
-
-    <div class="twelve columns guest__note">
-      <b>NOTE:</b> If you already RSVP'd but you wanna ammend your changes, just shoot us an email at <a href="mailto:hola@ignacioandvaiva.com">hola@ignacioandvaiva.com</a>.
-    </div>
   </div>
 </div>
 
