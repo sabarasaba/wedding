@@ -23,17 +23,25 @@
   -ms-filter: blur(2px) brightness(0.7);
 }
 
+.section.hero.thank-you:before {
+  background: url('/img/bite.png') center center;
+}
+
 .section.hero > .title {
   position: absolute;
   width: 100%;
   text-align: center;
   font-weight: 500;
   font-size: 80px;
-  line-height: 80px;
+  line-height: 50px;
   left: 50%;
   top: 20%;
   color: #ffffff;
   transform: translateX(-50%) translateY(-20%);
+}
+
+.title > .subtitle {
+  font-size: 22px;
 }
 
 .section.hero-end  {

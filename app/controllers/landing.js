@@ -48,13 +48,13 @@ export default Ember.Controller.extend({
 
 
     sendRSVP() {
+      this.transitionToRoute('thank-you');
+      return;
+
       const invitee = this.get('invitee');
       const invitations = [];
 
-      const createInvitation = (data) => {
-        console.log(data);
-        return this.store.createRecord('guest', data);
-      }
+      const createInvitation = data => this.store.createRecord('guest', data);
 
       invitations.push(createInvitation(invitee).save());
 
@@ -64,7 +64,6 @@ export default Ember.Controller.extend({
 
         return createInvitation(_.omit(el, ['id'])).save();
       });
-
 
       Ember.RSVP.all(invitations.concat(guests))
         .then(() => {
