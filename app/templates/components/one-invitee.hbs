@@ -10,6 +10,20 @@
   </div>
 </div>
 
+<div class="row">
+  <div class="twelve columns">
+    <label>Are you comming to Trakei after the ceremony?</label>
+    {{x-toggle
+      value=invitee.trakai
+      showLabels=true
+      onToggle=(mut invitee.trakai)
+      onLabel='Yes!'
+      offLabel='No'
+      size='large'
+    }}
+  </div>
+</div>
+
 <label>Food preference</label>
 {{#power-select
     searchEnabled=false

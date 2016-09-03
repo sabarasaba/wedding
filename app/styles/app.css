@@ -164,6 +164,17 @@
   line-height: 24px;
 }
 
+.x-toggle {
+  display: none !important;
+}
+
+.x-toggle-component {
+  margin-top: 1.5rem;
+}
+
+.x-toggle-component label {
+  margin-bottom: 0;
+}
 
 /* Shared
 â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */

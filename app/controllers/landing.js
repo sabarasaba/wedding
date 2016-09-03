@@ -7,6 +7,7 @@ export default Ember.Controller.extend({
   invitee: {
     name: '',
     email: '',
+    trakai: false,
     food: '',
     notes: ''
   },
@@ -48,10 +49,11 @@ export default Ember.Controller.extend({
 
 
     sendRSVP() {
-      return;
-
       const invitee = this.get('invitee');
       const invitations = [];
+
+      console.log(invitee);
+      return;
 
       const createInvitation = data => this.store.createRecord('guest', data);
 
