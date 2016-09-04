@@ -8,7 +8,7 @@
 
 .section.hero:before {
   content: '';
-  background: url('/img/background-hello.png') center center;
+  background: url('/img/background-hello.jpg') center center;
   background-size: cover;
 
   position: absolute;
@@ -24,7 +24,7 @@
 }
 
 .section.hero.thank-you:before {
-  background: url('/img/bite.png') center center;
+  background: url('/img/bite.jpg') center center;
   background-size: cover;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .section.hero-end  {
-  background: url('/img/background-bye.png') center center;
+  background: url('/img/background-bye.jpg') center center;
   background-size: cover;
   width: 100%;
   height: 100vh;
