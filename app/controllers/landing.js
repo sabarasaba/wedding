@@ -54,10 +54,13 @@ export default Ember.Controller.extend({
 
 
     sendRSVP() {
+      const model = this.get('model');
       const invitee = this.get('invitee');
       const invitations = [];
 
-      this.set('isSending', true);
+      model.pitito('pija');
+      //this.set('isSending', true);
+      return;
 
       const createInvitation = data => this.store.createRecord('guest', data);
 
