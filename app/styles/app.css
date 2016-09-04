@@ -33,12 +33,12 @@
   width: 100%;
   text-align: center;
   font-weight: 500;
-  font-size: 80px;
-  line-height: 80px;
+  font-size: 70px;
+  line-height: 70px;
   left: 50%;
-  top: 20%;
+  top: 90%;
   color: #ffffff;
-  transform: translateX(-50%) translateY(-20%);
+  transform: translateX(-50%) translateY(-90%);
 }
 
 .section.hero.thank-you > .title {
