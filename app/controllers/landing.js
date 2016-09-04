@@ -1,10 +1,12 @@
 import Ember from 'ember';
+import { validateRSVP } from '../helpers/validate-guest';
 import _ from 'lodash/lodash';
 
 export default Ember.Controller.extend({
   guests: [],
 
   isSending: false,
+  hasError: false,
 
   invitee: {
     name: '',
@@ -54,13 +56,18 @@ export default Ember.Controller.extend({
 
 
     sendRSVP() {
-      const model = this.get('model');
       const invitee = this.get('invitee');
       const invitations = [];
+      const isValidRSVP = validateRSVP(invitee, this.get('guests'));
 
-      model.pitito('pija');
-      //this.set('isSending', true);
-      return;
+      if (isValidRSVP) {
+        this.set('hasError', false);
+        this.set('isSending', true);
+        return;
+      } else {
+        this.set('hasError', true);
+        return;
+      }
 
       const createInvitation = data => this.store.createRecord('guest', data);
 

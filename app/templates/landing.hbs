@@ -75,6 +75,12 @@
         <b>NOTE:</b> If you already RSVP'd but you wanna ammend your changes, just shoot us an email at <a href="mailto:hola@ignacioandvaiva.com">hola@ignacioandvaiva.com</a>.
       </div>
 
+      {{#if hasError}}
+        <div class="twelve columns form-error">
+          There's an error in the form. Please make sure that you've filled up all the fields.
+        </div>
+      {{/if}}
+
       <input class="button-primary rsvp {{if isSending 'sending' ''}}" type="submit" value={{if isSending 'Sending..' 'RSVP'}} {{action 'sendRSVP'}} disabled={{isSending}}>
     </form>
   </div>
