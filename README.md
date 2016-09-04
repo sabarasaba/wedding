@@ -37,3 +37,8 @@ And replace the variables with your own firebase credentials.
 $ ember deploy production
 ```
 
+### Todo
+
+* [ ] Css is messy
+* [ ] Dataflow aint great
+* [ ] Add inline validation instead of general validation
