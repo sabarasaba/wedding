@@ -55,12 +55,6 @@ export default Ember.Controller.extend({
       const invitee = this.get('invitee');
       const invitations = [];
 
-      console.log(invitee);
-      console.log('=======');
-      this.get('guests').map(e => console.log(e));
-
-      return;
-
       const createInvitation = data => this.store.createRecord('guest', data);
 
       invitations.push(createInvitation(invitee).save());
