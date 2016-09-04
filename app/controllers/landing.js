@@ -4,6 +4,8 @@ import _ from 'lodash/lodash';
 export default Ember.Controller.extend({
   guests: [],
 
+  isSending: false,
+
   invitee: {
     name: '',
     email: '',
@@ -54,6 +56,8 @@ export default Ember.Controller.extend({
     sendRSVP() {
       const invitee = this.get('invitee');
       const invitations = [];
+
+      this.set('isSending', true);
 
       const createInvitation = data => this.store.createRecord('guest', data);
 

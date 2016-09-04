@@ -75,7 +75,7 @@
         <b>NOTE:</b> If you already RSVP'd but you wanna ammend your changes, just shoot us an email at <a href="mailto:hola@ignacioandvaiva.com">hola@ignacioandvaiva.com</a>.
       </div>
 
-      <input class="button-primary rsvp" type="submit" value="RSVP" {{action 'sendRSVP'}}>
+      <input class="button-primary rsvp {{if isSending 'sending' ''}}" type="submit" value={{if isSending 'Sending..' 'RSVP'}} {{action 'sendRSVP'}} disabled={{isSending}}>
     </form>
   </div>
 </div>
