@@ -39,6 +39,7 @@ $ ember deploy production
 
 ### Todo
 
+* [ ] Landing.controller should delegate more stuff to models
+* [ ] Dataflow ain't great
 * [ ] Css is messy
-* [ ] Dataflow aint great
 * [ ] Add inline validation instead of general validation
