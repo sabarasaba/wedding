@@ -63,7 +63,6 @@ export default Ember.Controller.extend({
       if (isValidRSVP) {
         this.set('hasError', false);
         this.set('isSending', true);
-        return;
       } else {
         this.set('hasError', true);
         return;
