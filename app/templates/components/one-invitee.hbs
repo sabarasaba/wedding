@@ -11,29 +11,46 @@
 </div>
 
 <div class="row">
-  <div class="twelve columns">
+  <div class="twelve columns guest--checkbox">
     <label>Are you comming to Trakei after the ceremony?</label>
     {{x-toggle
       value=invitee.trakai
       showLabels=true
       onToggle=(mut invitee.trakai)
-      onLabel='Yes!'
+      onLabel='Yes'
       offLabel='No'
       size='large'
     }}
   </div>
 </div>
 
-<label>Food preference</label>
-{{#power-select
-    searchEnabled=false
-    selected=chosenFood
-    class="u-full-width"
-    placeholder="Select your option"
-    options=food
-    onchange=(action "onFoodChanged")
-    as |name|
-  }}
-  {{name}}
-{{/power-select}}
-
+<div class="row">
+  <div class="six columns">
+    <label>Starter</label>
+    {{#power-select
+        searchEnabled=false
+        selected=chosenStarter
+        class="u-full-width"
+        placeholder="Select your option"
+        options=starters
+        onchange=(action "onStarterChanged")
+        as |name|
+      }}
+      {{name}}
+    {{/power-select}}
+  </div>
+  <div class="six columns">
+    <label>Main</label>
+    {{#power-select
+        searchEnabled=false
+        selected=chosenMain
+        class="u-full-width"
+        placeholder="Select your option"
+        options=mains
+        onchange=(action "onMainChanged")
+        as |name|
+      }}
+      {{name}}
+    {{/power-select}}
+  </div>
+</div>

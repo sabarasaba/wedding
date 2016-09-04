@@ -170,10 +170,29 @@
 
 .x-toggle-component {
   margin-top: 1.5rem;
+  display: inline-block;
+  min-width: 200px;
+}
+
+.x-toggle-component > .toggle-text {
+  display: inline-block !important;
+}
+
+.x-toggle-component > .x-toggle-container {
+  display: inline-block !important;
+  transform: translateY(4px);
 }
 
 .x-toggle-component label {
   margin-bottom: 0;
+}
+
+.guest--checkbox {
+  margin-bottom: 1rem;
+}
+.guest--checkbox > label {
+  display: inline-block;
+  margin-right: 30px;
 }
 
 /* Shared

@@ -1,24 +1,55 @@
 <div class="row guest__box">
-  <div class="six columns">
+  <div class="twelve columns">
     <label>Guest name</label>
     {{input value=guest.name class="u-full-width" placeholder="Name"}}
   </div>
 
+  <div class="guest__remove" {{action "remove"}}>
+    {{fa-icon 'times'}}
+  </div>
+</div>
+
+<div class="row">
+  <div class="twelve columns guest--checkbox">
+    <label>Is the guest going to Trakei after the ceremony?</label>
+    {{x-toggle
+      value=guest.trakai
+      showLabels=true
+      onToggle=(mut guest.trakai)
+      onLabel='Yes'
+      offLabel='No'
+      size='large'
+    }}
+  </div>
+</div>
+
+<div class="row">
   <div class="six columns">
-    <label>Food preference</label>
+    <label>Starter</label>
     {{#power-select
           searchEnabled=false
-          selected=chosenFood
+          selected=chosenStarter
           class="u-full-width"
           placeholder="Select an option"
-          options=food
-          onchange=(action "onFoodChanged")
+          options=starters
+          onchange=(action "onStarterChanged")
           as |name|
         }}
       {{name}}
     {{/power-select}}
   </div>
-  <div class="guest__remove" {{action "remove"}}>
-    {{fa-icon 'times'}}
+  <div class="six columns">
+    <label>Main</label>
+    {{#power-select
+          searchEnabled=false
+          selected=chosenMain
+          class="u-full-width"
+          placeholder="Select an option"
+          options=mains
+          onchange=(action "onMainChanged")
+          as |name|
+        }}
+      {{name}}
+    {{/power-select}}
   </div>
 </div>

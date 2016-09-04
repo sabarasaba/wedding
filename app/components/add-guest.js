@@ -1,17 +1,29 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  food: ['meat', 'chicken', 'veggie'],
-  chosedFood: null,
+  starters: ['empanadita', 'chochito', 'chorizito'],
+  chosedStarter: null,
+  mains: ['meat', 'chicken', 'veggie'],
+  chosedMain: null,
 
   actions: {
-
-    onFoodChanged(value) {
+    onStarterChanged(value) {
       const id = this.get('guest').id;
-      this.set('chosenFood', value);
+      this.set('chosenStarter', value);
 
       this.sendAction('onChange', {
-        attr: 'food',
+        attr: 'foodStarter',
+        value,
+        id
+      });
+    },
+
+    onMainChanged(value) {
+      const id = this.get('guest').id;
+      this.set('chosenMain', value);
+
+      this.sendAction('onChange', {
+        attr: 'foodMain',
         value,
         id
       });

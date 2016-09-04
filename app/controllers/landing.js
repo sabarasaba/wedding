@@ -8,7 +8,8 @@ export default Ember.Controller.extend({
     name: '',
     email: '',
     trakai: false,
-    food: '',
+    foodMain: '',
+    foodStarter: '',
     notes: ''
   },
 
@@ -18,7 +19,9 @@ export default Ember.Controller.extend({
 
       this.get('guests').pushObject({
         name: '',
-        food: '',
+        foodStarter: '',
+        foodMain: '',
+        trakai: false,
         id: count
       });
     },
@@ -27,7 +30,7 @@ export default Ember.Controller.extend({
       const invitee = this.get('invitee');
 
       this.set('invitee', Object.assign({}, invitee, {
-        food: what.value
+        [what.attr]: what.value
       }));
     },
 
@@ -41,8 +44,8 @@ export default Ember.Controller.extend({
     onChange(what) {
       const guests = this.get('guests');
 
-      if (what.attr === 'food') {
-        guests[what.id].food = what.value;
+      if (what.attr === 'foodStarter' || what.attr === 'foodMain') {
+        guests[what.id][what.attr] = what.value;
         this.set('guests', guests);
       }
     },
@@ -53,6 +56,9 @@ export default Ember.Controller.extend({
       const invitations = [];
 
       console.log(invitee);
+      console.log('=======');
+      this.get('guests').map(e => console.log(e));
+
       return;
 
       const createInvitation = data => this.store.createRecord('guest', data);
