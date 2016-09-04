@@ -25,6 +25,7 @@
 
 .section.hero.thank-you:before {
   background: url('/img/bite.png') center center;
+  background-size: cover;
 }
 
 .section.hero > .title {
@@ -103,7 +104,9 @@
 
 .guest__box {
   position: relative;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  border-top: 1px dashed #e1e1e1;
+  padding-top: 2rem;
 }
 
 .contact.u-full-width {
@@ -112,7 +115,7 @@
 
 .guest__remove {
   position: absolute;
-  top: -12px;
+  top: 3px;
   right: -10px;
   padding: 1rem;
   cursor: pointer;
