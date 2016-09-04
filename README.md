@@ -24,7 +24,7 @@ You will need the following things properly installed on your computer.
 $ cp .env-example .env
 ```
 
-And replace the variables with your own app credentials.
+And replace the variables with your own firebase credentials.
 
 ## Running / Development
 
