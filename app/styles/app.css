@@ -147,6 +147,21 @@
   box-shadow: none;
 }
 
+.ember-power-select-selected-item {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.ember-power-select-options {
+  overflow-y: scroll !important;
+}
+
+.ember-power-select-option + .ember-power-select-option {
+  border-top: 1px solid #d3d3d3;
+}
+
 .nipples-jump {
   max-height: 614px;
 }
