@@ -14,7 +14,9 @@ module.exports = function(environment) {
     },
 
     googleFonts: [
-      'Quicksand:300'
+      'Quicksand:300',
+      'Roboto:100,300',
+      'Raleway: 400'
     ],
 
     firebase: {
