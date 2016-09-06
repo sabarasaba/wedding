@@ -43,7 +43,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.googleAnalytics = {
-      webPropertyId: 'UA-83734734-1'
+      webPropertyId: process.env.GA_CODE
     };
   }
 
