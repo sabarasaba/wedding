@@ -1,7 +1,7 @@
 export default {
   "main.title": "Bride & Groom",
 
-  "details.title": "Details",
+  "details.title": "Invite",
   "details.line1": "Dear Family and Friends,",
   "details.line2": "We would be really happy if you could come to our wedding on 28th of December, 2016.",
   "details.line3": "Hopefully you aren't going to be too stuffed after Christmas and we apologize if you won’t feel too well next day at work..but we are planning to dance and drink all night and we count on you to help us celebrate on our big day :)",
@@ -19,7 +19,8 @@ export default {
 
   "rsvp.title": "RSVP",
   "rsvp.add_guest_button": "Add a guest",
-  "rsvp.note_placeholder": "Alergies? Want different food? Music? or just to tell us we're awesome!",
+  "rsvp.note_placeholder": "Tell us if you have allergies or you are vegetarian. Any songs that must play during the party?",
+  "rsvp.note_title": "Anything you wanna tell us?",
   "rsvp.note_gifts.title": "NOTE",
   "rsvp.note_gifts.text": "If you're considering giving us flowers or a present you can fit them in an envelope 😇",
   "rsvp.error_message": "There's an error in the form. Please make sure that you've filled up all the fields.",
@@ -49,8 +50,8 @@ export default {
   "invitee.name.label": "Your name",
   "invitee.name.placeholder": "Name",
   "invitee.email.label": "Your email",
-  "invitee.email.placeholder": "chocho@caliente.io",
-  "invitee.trakai": "Are you comming to Trakei after the ceremony?",
+  "invitee.email.placeholder": "hola@amigos.com",
+  "invitee.trakai": "Are you comming to Trakai after the ceremony?",
 
   // For the toggle
   "toggle.yes": "Yes",
@@ -59,9 +60,9 @@ export default {
   // For the food !
   "food.starter1": "Smoked salmon roll with fluffy ricotta cheese filling and ginger apple sauce",
   "food.starter2": "Roasted tomato and eggplant salad with goat cheese, pine nuts, basil and pesto sauce",
-  "food.starter3": "chorizito",
+  "food.starter3": "Rucola salad with Parma ham, melon and balsamic vinaigrette",
 
   "food.main1": "Zander fillet with fresh asparagus, cherry tomatoes and parsnip risotto in saffron sauce",
-  "food.main2": "Chicken fillet stuffed with sun-dried tomatoes, parmesan cheese and basil with small potatoes seasoned with thyme, celery and pumpkin puree, caramelized apricots",
+  "food.main2": "Chicken fillet stuffed with sun-dried tomatoes, parmesan cheese and basil with small potatoes seasoned with thyme, celery and pumpkin puree, grilled tomatoes",
   "food.main3": "Beef tenderloin with cherry sauce, fried eggplant, balsamic onions, fried tomatoes, apricots, basil, potato flake",
 };
