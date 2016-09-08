@@ -1,7 +1,7 @@
 <div class="row guest__box">
   <div class="twelve columns">
-    <label>Guest name</label>
-    {{input value=guest.name class="u-full-width" placeholder="Name"}}
+    <label>{{t 'add_guest.name.label'}}</label>
+    {{input value=guest.name class="u-full-width" placeholder=(t 'add_guest.name.placeholder')}}
   </div>
 
   <div class="guest__remove" {{action "remove"}}>
@@ -11,13 +11,13 @@
 
 <div class="row">
   <div class="twelve columns guest--checkbox">
-    <label>Is the guest going to Trakei after the ceremony?</label>
+    <label>{{t 'add_guest.trakei'}}</label>
     {{x-toggle
       value=guest.trakai
       showLabels=true
       onToggle=(mut guest.trakai)
-      onLabel='Yes'
-      offLabel='No'
+      onLabel=(t 'toggle.yes')
+      offLabel=(t 'toggle.no')
       size='large'
     }}
   </div>
@@ -25,12 +25,12 @@
 
 <div class="row">
   <div class="six columns">
-    <label>Starter</label>
+    <label>{{t 'add_guest.starter.label'}}</label>
     {{#power-select
           searchEnabled=false
           selected=chosenStarter
           class="u-full-width"
-          placeholder="Select an option"
+          placeholder=(t 'add_guest.starter.placeholder')
           options=starters
           onchange=(action "onStarterChanged")
           as |name|
@@ -39,12 +39,12 @@
     {{/power-select}}
   </div>
   <div class="six columns">
-    <label>Main</label>
+    <label>{{t 'add_guest.main.label'}}</label>
     {{#power-select
           searchEnabled=false
           selected=chosenMain
           class="u-full-width"
-          placeholder="Select an option"
+          placeholder=(t 'add_guest.main.placeholder')
           options=mains
           onchange=(action "onMainChanged")
           as |name|

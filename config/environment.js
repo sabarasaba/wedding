@@ -31,6 +31,10 @@ module.exports = function(environment) {
     APP: {  }
   };
 
+  ENV.i18n = {
+    defaultLocale: 'lt'
+  };
+
   if (environment === 'development') {
   }
 

@@ -1,19 +1,26 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  starters: [
-    'Smoked salmon roll with fluffy ricotta cheese filling and ginger apple sauce',
-    'Roasted tomato and eggplant salad with goat cheese, pine nuts, basil and pesto sauce',
-    'chorizito'
-  ],
-  chosenStarter: null,
+  i18n: Ember.inject.service(),
 
-  mains: [
-    'Zander fillet with fresh asparagus, cherry tomatoes and parsnip risotto in saffron sauce',
-    'Chicken fillet stuffed with sun-dried tomatoes, parmesan cheese and basil with small potatoes seasoned with thyme, celery and pumpkin puree, caramelized apricots',
-    'Beef tenderloin with cherry sauce, fried eggplant, balsamic onions, fried tomatoes, apricots, basil, potato flake'
-  ],
+  chosenStarter: null,
   chosenMain: null,
+
+  starters: Ember.computed('i18n.locale', function() {
+    return [
+      this.get('i18n').t('food.starter1'),
+      this.get('i18n').t('food.starter2'),
+      this.get('i18n').t('food.starter3')
+    ];
+  }),
+
+  mains: Ember.computed('i18n.locale', function() {
+    return [
+      this.get('i18n').t('food.main1'),
+      this.get('i18n').t('food.main2'),
+      this.get('i18n').t('food.main3')
+    ];
+  }),
 
   actions: {
     onStarterChanged(value) {
