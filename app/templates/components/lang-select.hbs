@@ -1,7 +1,17 @@
-<select {{action 'setLocale' on='change'}}>
-  {{#each locales as |loc|}}
-    <option value="{{loc.id}}" selected={{is-equal loc.id i18n.locale}}>
-      {{loc.text}}
-    </option>
-  {{/each}}
-</select>
+<div class="section locale">
+  <div class="container">
+    <div class="section-description">
+        {{#if (eq locale 'en')}}
+          <span class="locale-selector" {{action 'setLocale' 'lt'}}>
+            <img class="locale-flag" src="/img/lt.png" alt="lietuvu?"/>
+            Lietuvu?
+          </span>
+        {{else}}
+          <span class="locale-selector" {{action 'setLocale' 'en'}}>
+            <img class="locale-flag" src="/img/en.png" alt="english?"/>
+            English?
+          </span>
+        {{/if}}
+    </div>
+  </div>
+</div>

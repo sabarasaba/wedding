@@ -2,18 +2,14 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   i18n: Ember.inject.service(),
-  classNames: ['language-select'],
 
-  locales: Ember.computed('i18n.locale', 'i18n.locales', function() {
-    const i18n = this.get('i18n');
-    return this.get('i18n.locales').map(function (loc) {
-      return { id: loc, text: loc };
-    });
+  locale: Ember.computed('i18n.locale', function() {
+    return this.get('i18n.locale');
   }),
 
   actions: {
-    setLocale() {
-      this.set('i18n.locale', this.$('select').val());
+    setLocale(locale) {
+      this.set('i18n.locale', locale);
     }
   }
 });
