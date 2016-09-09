@@ -7,6 +7,6 @@ export default Ember.Route.extend({
   title: 'woops - Ignacio & Vaiva',
 
   afterModel: function() {
-    this.set('i18n.locale', Cookies.get('locale'));
+    this.set('i18n.locale', Cookies.get('locale') || 'en');
   }
 });
