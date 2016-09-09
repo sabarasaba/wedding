@@ -39,11 +39,5 @@ $ ember deploy production
 
 ### Todo
 
-* [ ] Landing.controller should delegate more stuff to models
-* [ ] Dataflow ain't great
 * [ ] Css is messy
 * [ ] Add inline validation instead of general validation
-
-
-Add select box separators and when selecting an option add a preset value (food, chicken, veggies)
-Add a please choose your food line for invitee.
