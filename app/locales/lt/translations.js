@@ -13,8 +13,8 @@ export default {
   "details.schedule4": "Vakarienė Vaidilos teatre.",
 
   "about.title": "Apie",
-  "about.line1": "Mes esame vieni iš tų laiingųjų, kurie susipažino internetu! Pirmas susitikimas įvyko Camden Town'e, Londone, sekmadienio popietę 2014 metais. Gyvenome Londone dvejus metus. Mes abu dirbame IT srityje, čia turbūt ir slypi paslaptis, kaip gali sugyventi du žmonės iš skitingų kontinentų :)",
-  "about.line2": "Mes žinojome, kad Londonas nėra tas miestas, kuriame norime gyventi amžinai, todėl šią vasarą nusprendėme išbandyti gyvenimą Amsterdame! Kol kas esame labai patenkinti gyvenimu šiame mažame ir jaukiame mieste. Mes jau turime savo dviratukus ir plaukiojome valtele po kanalus. Taip pat mokinamės vienas kito kalbų, puslapio viršuje matėte du žodžius, kuriuos Ignacio jau išmoko! Na ir dar tėtis jau jį išmokė žodį 'alus'.",
+  "about.line1": "Mes esame vieni iš tų laimingųjų, kurie susipažino internetu! Pirmas susitikimas įvyko Camden Town'e, Londone, sekmadienio popietę 2014 metais. Gyvenome Londone dvejus metus. Mes abu dirbame IT srityje, čia turbūt ir slypi paslaptis, kaip gali sugyventi du žmonės iš skitingų kontinentų :)",
+  "about.line2": "Mes žinojome, kad Londonas nėra tas miestas, kuriame norime gyventi amžinai, todėl šią vasarą nusprendėme išbandyti gyvenimą Amsterdame! Kol kas esame labai patenkinti šiame mažame ir jaukiame mieste. Mes jau turime savo dviratukus ir plaukiojome valtele po kanalus. Taip pat mokinamės vienas kito kalbų. Puslapio viršuje matėte du žodžius, kuriuos Ignacio jau išmoko! Na ir dar tėtis jau jį išmokė žodį 'alus'.",
   "about.line3": "Jei turite mums klausimų, galite su mumis susisiekti per Facebook arba rašykite mums ",
 
   "rsvp.title": "RSVP",
