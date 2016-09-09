@@ -22,7 +22,7 @@ export default {
   "rsvp.note_placeholder": "Parašykite jei turite alergijų ar esate vegetaras/ė. Gal žinote dainų, kurios privalo skambėti per šokius?",
   "rsvp.note_title": "Komentarai?",
   "rsvp.note_gifts.title": "Pastaba",
-  "rsvp.note_gifts.text": "Jei svarstote dovanoti gėles ar dovanėlę, jas galite sutalpinti į vokelį.",
+  "rsvp.note_gifts.text": "Jei svarstote dovanoti gėles ar dovanėlę, jas galite sutalpinti į vokelį 😇",
   "rsvp.error_message": "Klaida pildant formą. Prašome patikrinti, ar užpildėte visus laukelius.",
 
   "bye.title": "Mes bėgame ruoštis",

@@ -32,7 +32,7 @@ module.exports = function(environment) {
   };
 
   ENV.i18n = {
-    defaultLocale: 'lt'
+    defaultLocale: 'en'
   };
 
   if (environment === 'development') {

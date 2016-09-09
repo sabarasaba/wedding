@@ -12,7 +12,7 @@ export default Ember.Component.extend({
     setLocale(locale) {
       this.set('i18n.locale', locale);
       Cookies.set('locale', locale);
+      $('body, html').animate({ scrollTop: 0 }, 800);
     }
   }
 });
-
