@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import Cookies from 'ember-cli-js-cookie';
 
 export default Ember.Component.extend({
   i18n: Ember.inject.service(),
@@ -10,6 +11,7 @@ export default Ember.Component.extend({
   actions: {
     setLocale(locale) {
       this.set('i18n.locale', locale);
+      Cookies.set('locale', locale);
     }
   }
 });

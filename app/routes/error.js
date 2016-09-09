@@ -1,5 +1,12 @@
 import Ember from 'ember';
+import Cookies from 'ember-cli-js-cookie';
 
 export default Ember.Route.extend({
-  title: 'woops - Ignacio & Vaiva'
+  i18n: Ember.inject.service(),
+
+  title: 'woops - Ignacio & Vaiva',
+
+  afterModel: function() {
+    this.set('i18n.locale', Cookies.get('locale'));
+  }
 });
