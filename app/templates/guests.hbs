@@ -1,0 +1,32 @@
+<div class="section section-medium">
+  <div class="container">
+    <h3>Guest List</h3>
+
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Invited by</th>
+          <th>Trakai</th>
+          <th>Starter</th>
+          <th>Main</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+      {{#each model as |guest|}}
+        <tr>
+          <td>{{guest.name}}</td>
+          <td>{{guest.email}}</td>
+          <td>{{guest.invited_by}}</td>
+          <td>{{guest.trakai}}</td>
+          <td>{{guest.foodStarter}}</td>
+          <td>{{guest.foodMain}}</td>
+          <td>{{guest.notes}}</td>
+        </tr>
+      {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>

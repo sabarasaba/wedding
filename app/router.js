@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('landing', {path: '/'});
   this.route('thank-you', {path: '/thanks'});
   this.route('error');
+  this.route('guests', {path: '/guests'});
 });
 
 export default Router;
