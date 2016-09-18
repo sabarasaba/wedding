@@ -18,6 +18,7 @@ export default {
   "about.line3": "Jei turite mums klausimų, galite su mumis susisiekti per Facebook arba rašykite mums ",
 
   "rsvp.title": "RSVP",
+  "rsvp.fucking_button": "Siųsti",
   "rsvp.add_guest_button": "Pridėti svečią",
   "rsvp.note_placeholder": "Parašykite jei turite alergijų ar esate vegetaras/ė. Gal žinote dainų, kurios privalo skambėti per šokius?",
   "rsvp.note_title": "Komentarai?",

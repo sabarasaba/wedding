@@ -85,7 +85,7 @@
         </div>
       {{/if}}
 
-      <input class="button-primary rsvp {{if isSending 'sending' ''}}" type="submit" value={{if isSending 'Sending..' 'RSVP'}} {{action 'sendRSVP'}} disabled={{isSending}}>
+      <input class="button-primary rsvp {{if isSending 'sending' ''}}" type="submit" value={{if isSending 'Sending..' (t 'rsvp.fucking_button')}} {{action 'sendRSVP'}} disabled={{isSending}}>
     </form>
   </div>
 </div>

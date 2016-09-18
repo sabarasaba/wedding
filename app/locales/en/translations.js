@@ -18,6 +18,7 @@ export default {
   "about.line3": "If you have questions for us you can contact us on FB or by email at",
 
   "rsvp.title": "RSVP",
+  "rsvp.fucking_button": "RSVP",
   "rsvp.add_guest_button": "Add a guest",
   "rsvp.note_placeholder": "Tell us if you have allergies or you are vegetarian. Any songs that must play during the party?",
   "rsvp.note_title": "Anything you wanna tell us?",
