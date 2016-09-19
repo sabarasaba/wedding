@@ -5,7 +5,7 @@ export default DS.Model.extend({
   email: DS.attr('string'),
   foodStarter: DS.attr('string'),
   foodMain: DS.attr('string'),
-  trakai: DS.attr('boolean'),
+  trakai: DS.attr('string'),
   notes: DS.attr('string'),
   invited_by: DS.attr('string'),
   createdAt: DS.attr('number')
