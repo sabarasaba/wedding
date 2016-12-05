@@ -434,3 +434,110 @@
 }
 
 
+/* Styles for the sitting plan*/
+.new-header {
+  overflow: hidden;
+  color: #3f51b5;
+  background: #fc8554 url(/img/rose.png) no-repeat 80% 0;
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 500px;
+  padding: 7em 0;
+  padding-top: 10em;
+  height: calc(100vh - 17em);
+}
+
+.new-header-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0 6vw;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.new-header-title {
+  margin: 0;
+  font-size: 10vw;
+  font-family: 'Abril Fatface', serif;
+  font-weight: 400;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.new-header-title [class*="letter"] {
+  display: block;
+  position: relative;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  white-space: pre;
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+}
+
+
+.seating-plan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 8rem;
+  padding-top: 5rem;
+}
+
+.table {
+  width: 100%;
+  margin: 5px;
+}
+
+.table-name {
+}
+
+.table-chairs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.table-chair {
+  margin: 5px;
+}
+
+.table-guest {
+  background:url("http://assets.nydailynews.com/polopoly_fs/1.2756381.1471536974!/img/httpImage/image.jpg_gen/derivatives/article_750/kingfaceoff19n-3-web.jpg") no-repeat;
+  width: 100px;
+  height: 100px;
+  border-radius:50%;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+
