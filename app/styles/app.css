@@ -519,6 +519,19 @@
 }
 
 .table-name {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+}
+
+.table-name > img {
+  width: 100px;
+  height: 100px;
+}
+
+.table-name > .padded {
+  padding-left: 15px;
 }
 
 .table-chairs {
@@ -532,7 +545,7 @@
 }
 
 .table-guest {
-  background:url("http://assets.nydailynews.com/polopoly_fs/1.2756381.1471536974!/img/httpImage/image.jpg_gen/derivatives/article_750/kingfaceoff19n-3-web.jpg") no-repeat;
+  background-repeat: no-repeat;
   width: 100px;
   height: 100px;
   border-radius:50%;
