@@ -518,6 +518,10 @@
   margin: 5px;
 }
 
+.table + .table {
+  margin-top: 65px;
+}
+
 .table-name {
   display: flex;
   height: 100px;
@@ -553,4 +557,16 @@
   background-position: 50% 50%;
 }
 
+@media (max-width: 750px) {
+
+  .seating-plan {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .section-heading > span {
+    padding: 0;
+  }
+
+}
 
