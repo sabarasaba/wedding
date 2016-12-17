@@ -111,7 +111,7 @@ export default {
   "seating.tandil.lucho": "Jaunikio draugas iš universiteto, su kuriuo daug keliauta, juoktasi ir žaista daug futbolo mačų. Lucho turi miško kabinų nuomos verslą Tandil'e ir domisi vynu.",
   "seating.tandil.ruslanas": "Nuotakos brolis. Jis mėgsta gaminti, domisi video žaidimais, mememis ir Hanna Montana serialu.",
   "seating.tandil.juanr": "Jaunikio  mėgstamiausias brolis. Jis kvėpuoja video žaidimais, mememis ir yra giliai susidomėjęs Justin Bieber muzika.",
-  
+
 
   "seating.amsterdam.agnek": "Mūsų giminės balerina, ji šiuo metu lanko balerinų mokyklą. Jai labai patinka Italija, kalba itališkai, bei domisi ir dirba mados srityje.",
   "seating.amsterdam.auguste": "Nuotakos pusseserė, kuri studijuoja dizainą. Ji domisi muzika ir mada kaip jos tėveliai!",
@@ -134,5 +134,6 @@ export default {
   "seating.vilnius.romualdas": "Po kelerių metų Airijoje grįžo kurti gyvenimo Lietuvoje kartu su Sandra. Romas yra žmogus, kuris gali dirbti bet kurį darbą ir greitai išmoksta.",
   "seating.vilnius.sandra": "Nuotakos pusseserė. Po kelerių metų gyvenimo Airijoje, grįžo į Lietuvą, Vilnių. Šiuo metu mokosi ispanų kalbą, nes visai norėtų pagyventi šiltojoje Ispanijoje.",
   "seating.vilnius.valdas": "Valdas gyvena Ukmergėje, labai mėgsta keliauti ir žaisti įvairiausius žaidimus. Kaip jaunikis sako, jų namai yra lyg didelis žaidimų kambarys; kiekviename namo aukšte po žaidimą.",
-  "seating.vilnius.vijtorija": "Viktorija yra profesionali mama ir virtuvės šefė, ypač gerai sekasi gaminti saldumynus ir ledus!",
+  "seating.vilnius.viktorija": "Viktorija yra profesionali mama ir virtuvės šefė, ypač gerai sekasi gaminti saldumynus ir ledus!",
+  "seating.vilnius.sonata": "Slidinėjimo entuziastė, kiekvienais metais važiuoja kur nors slidinėti. Taip pat ji mėgsta megzti ir gaminti, specializuojasi tortuose.",
 };
